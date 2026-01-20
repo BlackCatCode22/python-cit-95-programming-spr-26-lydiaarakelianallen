@@ -1,3 +1,4 @@
+# written 1/20/26 by Lydia Allen
 # This first line is provided for you
 hrs = input("Enter Hours:")
 hrs = float(hrs)

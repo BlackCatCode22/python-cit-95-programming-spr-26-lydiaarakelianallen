@@ -1,3 +1,4 @@
+# written 1/20/26 by Lydia Allen
 # gets the first integer from the user and converts it from a string to an integer
 first = input("Enter first number: ")
 first = int(first)
