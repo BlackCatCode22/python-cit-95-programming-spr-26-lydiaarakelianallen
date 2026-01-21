@@ -1,11 +1,11 @@
 # written 1/20/26 by Lydia Allen
 # takes three integers from the user and converts them from strings to integers
 first = input("Enter first number: ")
-first = int(first)
+first = float(first)
 second = input("Enter second number: ")
-second = int(second)
+second = float(second)
 third = input("Enter third number: ")
-third = int(third)
+third = float(third)
 # uses a function built on if statement to compair the first to both the second and third.
 def max_num(first, second, third):
     if first >= second and first >= third:
@@ -16,3 +16,5 @@ def max_num(first, second, third):
 # if the two statements above are not true, then the third must be the biggest. this will print the third.
     else:
         return third
+
+print(max_num(first, second, third))
