@@ -6,19 +6,13 @@ second = input("Enter second number: ")
 second = int(second)
 third = input("Enter third number: ")
 third = int(third)
-# uses if statement to compair the first and second numbers
-if first > second:
-# if the first is bigger, compair the first with the third
-    if first > third:
-        largest = first
+# uses a function built on if statement to compair the first to both the second and third.
+def max_num(first, second, third):
+    if first >= second and first >= third:
+        return first
+# if the second is bigger than the first and the third, it will print the second
+    elif second >= first and second >= third:
+        return second
+# if the two statements above are not true, then the third must be the biggest. this will print the third.
     else:
-        largest = third
-# if the second is bigger than the first compair the second with the third
-else:
-    if second >third:
-        largest = second
-    else:
-        largest = third
-# all comparisons are done, now it is time to print the largest number.
-# if there is a tie, it will still print the correct number because all we care about is the number, not if it is the first second or third input
-print(largest)
+        return third
