@@ -6,6 +6,7 @@ try:
     fr = float(sr)
 except:
     print("Error, please enter numeric input")
+    quit()
 
 print(fh,fr)
 
