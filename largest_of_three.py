@@ -6,15 +6,14 @@ second = input("Enter second number: ")
 second = float(second)
 third = input("Enter third number: ")
 third = float(third)
-# uses a function built on if statement to compair the first to both the second and third.
-def max_num(first, second, third):
-    if first >= second and first >= third:
-        return first
-# if the second is bigger than the first and the third, it will print the second
-    elif second >= first and second >= third:
-        return second
-# if the two statements above are not true, then the third must be the biggest. this will print the third.
+# nested if statements
+if first>= second:
+    if first >= third:
+        print(first)
     else:
-        return third
-
-print(max_num(first, second, third))
+        print(third)
+else:
+    if second >= third:
+        print(second)
+    else:
+        print(third)
