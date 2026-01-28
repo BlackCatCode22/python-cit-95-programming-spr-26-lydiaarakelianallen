@@ -8,7 +8,7 @@ except:
     print("Error, please enter numeric input")
     quit()
 
-print(fh,fr)
+#print(fh,fr)
 
 if fh>40:
     reg=fr*fh
